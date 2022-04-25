@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "dibssbd" --password-stdin
-        docker image build -t dibssbd/uinitorxx:v2 .
+        docker image build -t dibssbd/uinitorxx:v1 .
         docker push dibssbd/uinitorxx:v1
